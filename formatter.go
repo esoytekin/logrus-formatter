@@ -12,7 +12,7 @@ import (
 
 const (
 	// Default log format will output [INFO]: 2006-01-02T15:04:05Z07:00 - Log message
-	defaultLogFormat       = "%lvl% [ %time% ] %file% %func% => %msg% %fields%\n"
+	defaultLogFormat       = "%lvl% [ %time% ] %file% %func% => %msg% %fields%"
 	defaultTimestampFormat = "2006-01-02 15.04.05"
 )
 
