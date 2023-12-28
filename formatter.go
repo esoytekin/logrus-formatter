@@ -2,12 +2,13 @@ package formatter
 
 import (
 	"fmt"
-	"github.com/sirupsen/logrus"
 	"os"
 	"path/filepath"
 	"sort"
 	"strconv"
 	"strings"
+
+	"github.com/sirupsen/logrus"
 )
 
 const (
@@ -24,6 +25,10 @@ type Formatter struct {
 	// Also can include custom fields but limited to strings.
 	// All of fields need to be wrapped inside %% i.e %time% %msg%
 	LogFormat string
+}
+
+func NewFormat() logrus.Formatter {
+	return &Formatter{}
 }
 
 // Format building log message.
